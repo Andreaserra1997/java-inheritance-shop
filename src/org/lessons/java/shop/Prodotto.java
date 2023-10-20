@@ -19,16 +19,16 @@ public class Prodotto {
         this.description = description;
         this.price = price;
         this.iva= iva;
-        code = codRandom.nextInt(1, 100);
+        code = codRandom.nextInt(1, 10000);
     }
 
     //METODI
 
     public String getNameComplete() {
-        return name + description;
+        return name + "-" + code;
     }
     public int getPriceIva() {
-        return price - (price * iva / 100);
+        return price + (price * iva / 100);
     }
 
     //GETTER E SETTER
