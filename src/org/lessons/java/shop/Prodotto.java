@@ -49,4 +49,7 @@ public class Prodotto {
         return iva;
     }
 
+    public int getCode() {
+        return code;
+    }
 }
